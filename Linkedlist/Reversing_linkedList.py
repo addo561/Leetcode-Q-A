@@ -18,4 +18,4 @@ class solution:
             prev = curr # move prev forward
             curr = next_node #move curr forward
 
-        return prev    
+        return prev    # e.i last element of list
