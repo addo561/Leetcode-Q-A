@@ -27,3 +27,21 @@ def isCommonPrefix(strs,l):
 
 strs = ["flower", "flow", "flight"]
 print(LCP_with_binary_search(strs))  # Output: "fl"
+
+
+#soln 2 
+
+def LCP(strs):
+    n = len(strs)
+    min_length = float('inf')
+    i =  0
+    for s in strs:
+       if len(s) < min_length:
+           min_length = len(s)
+    
+    while i < min_length:
+        for s in strs:
+            if s[i] != strs[0][i]:
+                return s[:i]
+        i +=1
+    return strs[0][:i]                
