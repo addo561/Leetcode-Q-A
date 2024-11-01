@@ -1,3 +1,6 @@
+from typing import List
+
+
 link = 'https://leetcode.com/problems/spiral-matrix/'
 
 
